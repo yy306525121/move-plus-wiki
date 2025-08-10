@@ -1,0 +1,30 @@
+emby-plus:
+  lan-ip: 192.168,10.110
+  plex:
+    host: plex.xxx.com
+    inner-address: http://192.168.50.238:32400
+  emby:
+    host: emby.xxx.com
+    inner-address: http://192.168.50.238:8096
+    api-key: xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    cache-path: true
+  auto-transfer:
+    enable: true
+    max-thread: 3
+    source-cloud-storage-name: 115云盘
+    source-path: /movie-plus
+    dest-cloud-storage-name: 123云盘
+    dest-path: /转存/自动转存
+    period-minute: 3
+  cloud-storage-list:
+    - name: 123云盘
+      type: type_123
+      path-prefix: /123
+      client-id: xxxxxxxxxxxxxxxxxxxxxxxxx
+      client-secret: xxxxxxxxxxxxxxxxxxxxxxx
+    - name: 115云盘
+      type: type_115
+      path-prefix: /115
+      access-token: xxxxxxxxxxxxxxxxxxxxxxx
+      refresh-token: xxxxxxxxxxxxxxxx
+      expire-time: xxxxxxxxxxxxxxxxxxxxx
